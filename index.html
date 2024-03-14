@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <title>Rock, Paper & Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <h1>Rock Paper Scissors</h1>
+      <p>Try Your Luck</p>
+
+      <div id="displayBox">
+        <div id="box1">
+          <h3>You : <span id="youWin">0</span></h3>
+          <div id="imgDiv1">
+            <!-- <img src="./images/paper.png" alt=""> -->
+            <p>Select your option</p>
+          </div>
+        </div>
+        <div id="box2">
+          <h3>Computer : <span id="compWin">0</span></h3>
+          <div id="imgDiv2">
+            <!-- <img src="./images/scissors.png" alt=""> -->
+            <p>I have selected</p>
+          </div>
+        </div>
+      </div>
+
+      <p><span id="chanceLeft">10</span> Chances left</p>
+
+      <h2>Choose One !</h2>
+
+      <div id="option">
+        <div class="optionBox" onclick="youChose(0)">
+          <img src="./images/rock.png" alt="" />
+        </div>
+        <div class="optionBox" onclick="youChose(1)">
+          <img src="./images/paper.png" alt="" />
+        </div>
+        <div class="optionBox" onclick="youChose(2)">
+          <img src="./images/scissors.png" alt="" />
+        </div>
+        <button style="display: none">refresh</button>
+      </div>
+    </div>
+  </body>
+  <script src="./srcipt.js"></script>
+</html>
